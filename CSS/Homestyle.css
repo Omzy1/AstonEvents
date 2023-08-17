@@ -1,0 +1,504 @@
+/* this is the start of the navigation menu style */
+/* creating a variable for pink colour */
+:root{
+ --pink: #C19A6B;
+}
+/* this is for the  all body */
+body{
+font-family: Lato, sans-serif;
+margin: 0;
+}
+/* this modify the navbar section  */
+#navbar{
+ width: 100vw;
+ background-color: rgba(0, 0, 0, 0.9);
+ font-weight: bold;
+}
+/* ordering the list  with display flex and push the content to the end*/
+ul  {
+ list-style: none;
+ margin: 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 1em 0;
+
+}
+/* modifying the text  and position of the links */
+li a {
+text-decoration: none;
+color: #DCDCDC;
+padding-right: 3em;
+position: relative;
+transition: all ease-in-out 250ms;
+}
+/* this is a sudo element, after every list items that is a link I want to certain element to appear like the pink line */
+li a::after{
+   content: '';
+   position: absolute;
+   display: block;
+   height: 0.4em;
+   width: 0%;
+   background-color: var(--pink);
+   bottom: -1em;
+   transition: all ease-in-out 250ms;
+}
+/* this happen after the links are hover */
+li a:hover::after {
+    width:60%;
+}
+/* manipulate the colot of the hover */
+li a:hover{
+    color: var(--pink);
+}
+/* first-child means first list (logo),therefore we are pushing the logo to the left */
+li:first-child{
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+.enter{
+    background-color: #DCDCDC;
+    font-size: 11px;
+    border-color: #DCDCDC;
+
+}
+#button{
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color : #DCDCDC;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+#button:hover {
+    color: #C19A6B;
+  }
+
+  /* this is the start of the page content  */
+  * {
+      box-sizing: border-box;
+  }
+  #home-title{
+   text-align: center;
+   justify-content: center;
+   font-family: Chrome, Edge, Firefox, Opera, Safari;
+   font-size: 50px;
+   margin-top: 15%;
+   color: #888888;
+   animation: text 3.5s 1;
+   letter-spacing: 5px;
+  }
+  @keyframes text{
+    0%{
+    color:gold;
+    margin-bottom: 15px;
+    text-decoration: none;
+    }
+    30%{
+      letter-spacing: 20px;
+      margin-bottom: 15px;
+      text-decoration: none;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: 15px;
+    }
+  }
+  .background-img{
+    background-image: url(../images/aston-university.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* .login-img{
+    /* margin-left: 40%; */
+   
+  
+
+/* Create three equal columns that floats next to each other */
+.column-text {
+  /* width: 33.3%; */
+  flex: 1;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align: center;
+  display: flex;
+ /* float: left;
+ width: 30%;
+ padding: 10px;
+ height: 300px;
+ margin-left: 30px; */
+}
+#tlt-Spage{
+text-align: center;
+color: #888888;
+}
+/* this is for the 3 images that are display with the text int the homepage */
+.img-text{
+ width: 100%;
+ padding: 10px;
+}
+.subtl-text{
+text-align: center;
+color: #888888;
+font-size: 20px;
+}
+/* copyright */
+footer{
+  margin-top: 23%;
+}
+.row-text{
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 7%;
+  margin-left: 10%; */
+}
+#sport-title{
+  text-align: center;
+  color: #888888;
+}
+/* this is the start of the content in the sport page */
+.container{
+  background-color: black;
+  display: flex;
+  height: 750px;
+  margin-top: 10%;
+
+}
+#img-sport{
+  max-width: 100%;
+  max-height: 100%;
+  width: 85%;
+  justify-content: center;
+}
+
+.sport{
+  max-width: 100%;
+  width: 95%;
+  margin-left: 10%;
+}
+
+#sport-tlt{
+ text-align: center;
+ margin-right: 15%;
+ color: black
+}
+.info-left{
+  float: left;
+  width: 45%;
+   /* background-color: yellow;  */
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 100px;
+  color: black;
+
+}
+#tlt-Spage{
+  color: #888888;
+  /* background-color: violet; */
+  text-align: center;
+
+
+}
+
+.entire{
+  display: flex;
+}
+.fit-sport{
+  max-width: 100%;
+  width: 10%;
+  margin-left: 13%;
+}
+/* this is the tart of the football information */
+
+#descrp-football{
+  color: #888888;
+  display: flex;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+}
+.container-content{
+float: left;
+/* background-color: yellow; */
+height: 700px;
+width: 40%;
+margin-left: 40px;
+}
+/* this the sport text */
+#sport-descrp{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+color: #888888;
+}
+#football-tlt{
+  color: white;
+  margin-top: 30%;
+  text-align: center;
+}
+.football-btn{
+  margin-left: 45%;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.football-btn:hover {
+background-color: red;
+}
+.cup-football{
+  max-width: 100%;
+  width: 15%;
+  margin-left: 5%;
+
+}
+/* this is the start of football event detail */
+
+#event-Footbtlt{
+text-align: center;
+}
+
+.column-football{
+float: left;
+/* width: 33.3%; */
+flex: 1;
+margin-bottom: 16px;
+padding: 0 8px;
+text-align: center;
+display: flex;
+
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  margin: 8px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,255,0.3);
+}
+.container-football{
+  padding: 0 16px;
+}
+.row-football{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-football::after, .row-football::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.football-event{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.title_football{
+  color: gray;
+  text-align: center;
+}
+.booking-football{
+  border: none;
+  outline: 0;
+  padding: 8px;
+display: inline-block;
+color: white;
+background-color: black;
+text-align: center;
+cursor: pointer;
+width: 50%;
+margin: 10px;
+}
+.booking-football:hover{
+background-color: #888888;
+}
+/* this is the start of basketball info */
+.basketball-content{
+  float: left;
+/* background-color: yellow; */
+height: 700px;
+width: 40%;
+margin-left: 10px;
+}
+.basketball-img{
+  max-width: 100%;
+  width: 80%;
+  margin-left: 20%;
+
+}
+.basketball-container{
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  margin-top: 5%;
+
+}
+#basketball-descrp {
+  /* text-align: center; */
+  color: #888888;
+  display: flex;
+  text-align: center;
+  font-size: 100%;
+  margin-left: 20%;
+}
+#basketball-tlt{
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 20%;
+
+}
+.basket-cup{
+  max-width: 100%;
+  width: 15%;
+  margin-left: 7%;
+
+}
+
+/* this is the start of the culture page */
+/* this is about culture */
+.about-img{
+  max-width: 100%;
+  width: 70%;
+  margin-left: 10%;
+}
+/* this is the start of history page */
+#img-history{
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  margin-top: 10%;
+  justify-content: center;
+}
+.art-img{
+  max-width: 100%;
+  width: 100%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+/* this is the start of other page */
+#img-music{
+  max-width: 100%;
+  height: auto;
+  width: 60%;
+  margin-left: 10%;
+}
+.talk-img{
+  max-width: 100%;
+  height: auto;
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 15%;
+}
+/* this is for the login  and register */
+ .login-entire{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.loged{
+  width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+/* button submit */
+.send{
+font-size: 1.6vw;
+border-radius: 10px;
+background-color:#2E2EFF;
+color: white;
+width: 100%;
+}
+.send:hover{
+  background-color: #5C5CFF;
+  color: white;
+}
+.signup-link{
+  margin-top: 15px;
+  font-size: 1.5vw;
+}
+/* labels */
+.lbl-login1{
+  font-size: 1.3vw; 
+  margin-right: 70%;
+}
+.lbl-login2{
+  margin-right: 65%;
+  font-size: 1.3vw;
+}
+.error-msg{
+  color: red;
+  margin-top: -10px;
+  font-size: 15px;
+  /* margin-left: 10%; */
+}
+#err-popup{
+display: none;
+text-align: center;
+font-size: 1.3vw;
+color: red;
+}
+.register-info{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.4);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 255, 0.7);*/
+  margin: 8px;
+  width: 480px;
+  padding: 20px 40px;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.register-info:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+  
+}
+
+#signin {
+  width: 100%;
+}
+/* home backgroung image */
+.image{
+  background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) ,url(../images/aston-university.jpg);
+  background-size: cover;
+  background-position: center;
+height: 100vh;
+}
+.login-home{
+color: white;
+font-size: 20px;
+text-decoration: none;
+background-color: #888888;
+padding: 15px;
+border : 6px black;
+border-radius: 6px;
+} 
+/* hovering */
+.login-home:hover{
+ background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-width: 5px;
+  border: black;
+
+} 
+.button-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
